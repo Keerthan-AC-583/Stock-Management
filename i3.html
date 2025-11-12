@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Stock Management</title>
+  <link rel="stylesheet" href="st3.css">
+</head>
+<body class="home-page">
+  <header>
+    <h1>🗃️ Stock Management</h1>
+    <nav id="main-nav">
+      <button id="home-btn">Home</button>
+    </nav>
+    <div id="user-menu" class="top-right-menu">
+      <button id="profile-btn" class="profile-btn" style="display:none;">User ▼</button>
+      <div id="dropdown" class="dropdown-content">
+        <button id="dashboard-link">Dashboard</button>
+        <button id="logout-btn">Log Out</button>
+      </div>
+    </div>
+  </header>
+  <main>
+    <div class="sidebar" id="sidebar" style="display:none;">
+      <button id="side-dashboard" class="sidebar-btn active">Dashboard</button>
+      <button id="side-stocks" class="sidebar-btn">Stocks</button>
+      <button id="side-sell" class="sidebar-btn">Sell</button>
+      <button id="side-add" class="sidebar-btn">Add Stock</button>
+      <button id="side-admin" class="sidebar-btn">Admin Panel</button>
+
+    </div>
+    <div class="container" id="content"></div>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
